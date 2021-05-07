@@ -19,14 +19,12 @@ function includeRuleForSourceMapLoader(rules) {
         rule.include = [path.resolve(__dirname, 'lib'), path.resolve(__dirname, 'node_modules', 'spfx-2019-lib')];
       }
     }
+}
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: (generatedConfiguration) => {
+    //we dont like to include all source maps
+    includeRuleForSourceMapLoader(generatedConfiguration.module.rules);
+    return generatedConfiguration;
   }
-  build.configureWebpack.mergeConfig({
-    additionalConfiguration: (generatedConfiguration) => {
-      //we dont like to include all source maps
-      includeRuleForSourceMapLoader(generatedConfiguration.module.rules);
-  
-
-      return generatedConfiguration;
-    }
-  });
-  build.initialize(require('gulp'));
+});
+build.initialize(require('gulp'));

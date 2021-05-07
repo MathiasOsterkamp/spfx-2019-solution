@@ -10,11 +10,7 @@
     "sourceMap": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules/@microsoft",
-      "./node_modules/spfx-2019-lib/interfaces"
-    ],
+    "typeRoots": ["./node_modules/@types", "./node_modules/@microsoft"],
     "types": ["es6-promise", "webpack-env"],
     "lib": ["es5", "dom", "es2015.collection"]
   },
