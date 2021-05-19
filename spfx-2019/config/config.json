@@ -9,6 +9,14 @@
           "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
         }
       ]
+    },
+    "custom-installer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/customInstaller/CustomInstallerApplicationCustomizer.js",
+          "manifest": "./src/extensions/customInstaller/CustomInstallerApplicationCustomizer.manifest.json"
+        }
+      ]
     }
   },
   "externals": {
@@ -18,6 +26,7 @@
   }
 },
   "localizedResources": {
-    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js"
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "CustomInstallerApplicationCustomizerStrings": "lib/extensions/customInstaller/loc/{locale}.js"
   }
 }

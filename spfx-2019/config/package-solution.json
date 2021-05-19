@@ -3,9 +3,23 @@
   "solution": {
     "name": "spfx-2019-client-side-solution",
     "id": "234ad371-c2bd-4837-b4e2-50a5dbb0308b",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "includeClientSideAssets": true,
-    "skipFeatureDeployment": true
+    "skipFeatureDeployment": false,
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "a4b2f6ab-5e1b-4b6c-aa40-f4a708929633",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "CustomInstallerApplicationCustomizer.xml"
+          ]
+        }
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/spfx-2019.sppkg"

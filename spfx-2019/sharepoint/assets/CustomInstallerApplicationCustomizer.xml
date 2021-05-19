@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction Title="CustomInstallerApplicationCustomizer" Location="ClientSideExtension.ApplicationCustomizer" ClientSideComponentId="6cc39d9d-d730-4352-8212-7108749e04f9">
+    </CustomAction>
+</Elements>
